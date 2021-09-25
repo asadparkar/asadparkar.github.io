@@ -147,13 +147,15 @@ hr{
  #about-asad hr{
  }
 .about-para{
+    font-size: 30px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
 
  }
 
 .about-hey{
-    font-size:25px;
+    color:#FEC260;
+    font-size:30px;
 }
 
 .about-me-paratitle{
