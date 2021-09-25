@@ -1,0 +1,165 @@
+#started{
+    color:white;
+}
+.started-title{
+    font-size:30px;
+    margin:70px 0px 0px 555px;
+}
+.second-title{
+    font-family: 'Rubik', sans-serif;
+
+    color:#FD6F96;
+    margin-left:205px;
+    text-align: left;
+}
+.started-para{
+    font-family: 'Rubik', sans-serif;
+    margin-left:190px;
+    text-align: left;
+    width:100%;
+    font-size:20px;
+}
+#education{
+    font-family: 'Rubik', sans-serif;
+    color:white;
+}
+
+#education h1{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+#education h4{
+    color:#1DB9C3;
+}
+#education h3{
+    color:#ECAC5D;
+    margin-top:55px;
+    font-size: 35px;
+}
+.asad-image{
+    width:40%;
+}
+#next{
+    color:white;
+    font-family: 'Rubik', sans-serif;
+}
+
+#next h1{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 40px;
+}
+#next p{
+    font-size:17px;
+}
+#non-technical{
+    font-family: 'Rubik', sans-serif;
+    color:white;
+}
+#non-technical img{
+    float:right;
+    width:60%;
+}
+#non-technical h1{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:40px;
+}
+#non-technical h3{
+    color:#80ED99;
+    text-align: left;
+    margin-bottom:15px;
+}
+#non-technical p{
+    text-align: left;
+    width:130%;
+    font-size:17px;
+}
+#non-technical button{
+    float:left;
+}
+
+#hobbies{
+    font-family: 'Rubik', sans-serif;
+    color:white;
+}
+#hobbies h1{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:40px;
+}
+#hobbies p{
+    text-align: left;
+    font-size: 17px;
+}
+#hobbies h3{
+    color:#F037A5;
+}
+
+#hobbies img{
+    border-radius: 15px;
+    margin-top:95px;
+}
+.common{
+    text-align: center;
+    margin-top:40px;
+}
+.btn-block{
+    width:50%;
+    margin-left:270px;
+
+}
+.footer{
+    margin-top:45px;
+    background-color: white;
+    height:140px;
+    text-align: center;
+}
+.footer button{
+    margin-top:15px;
+}
+h6{
+    margin-top:10px;
+}
+
+@media screen and (max-width: 768px) {
+    .second-title{
+        margin-left:10px;
+        margin-top:-275px;
+        font-size:35px;
+    }
+    .started-para{
+        margin-left:0px;
+        font-size: 15px;
+    }
+    #started img{
+        width:80%;
+    }
+    #education h3{
+        font-size:30px;
+    }
+    #next h1{
+        font-size:30px;
+    }
+    #non-technical h1{
+        font-size:30px;
+    }
+    #non-technical img{
+        margin-top:55px;
+        margin-right:30px;
+        width:80%;
+    }
+    #non-technical p{
+        font-size:15px;
+        width:100%;
+    }
+    #hobbies img{
+        width:100%;
+        margin-top:-10px;
+    }
+
+    #hobbies button{
+        margin-left:80px;
+    }
+}
