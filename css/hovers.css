@@ -1,0 +1,298 @@
+.glow-on-hover {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #white
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#3F0071;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* ---------------------------------------------KNOW MORE BUTTON------------------------------------------------------------------- */
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(63,0,113);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 20x;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    text-decoration: none;
+
+  }
+  .view-more{
+      display:inline-block;
+      margin-top:50px;
+      margin-left:620px;
+  }
+  /* ------------------------------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------------SKILLSET CARD--------------------------------------------------------- */
+  .skills-bar{
+    margin-left:420px;
+    margin-top:25px;
+    width:800px;
+    background:#11052c;
+    border-radius:10px;
+    padding:15px 35xp;
+    padding-bottom:10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .skills-bar .bar{
+    margin:30px 0;
+  }
+  .skills-bar .bar:first-child{
+    margin-top:10px;
+  }
+  .skills-bar .bar .info{
+    margin-top:5px;
+  }
+  .skills-bar .bar .info span{
+    font-size:17px;
+    font-weight:500;
+    opacity:0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  
+  @keyframes showText{
+    100%{
+      opacity:1;
+  }
+  }
+  .skills-bar .bar .progress-line{
+    position:relative;
+    height:20px;
+    width:100%;
+    background:#f0f0f0;
+    border-radius: 10px 10px 10px 10px;
+    transform: scaleX(0);
+    animation:animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform-origin:left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05), 0px 1px rgba(255,255,255,0.8);
+  }
+  
+  @keyframes animate{
+    100%{
+      transform:scaleX(1);
+    }
+  }
+  
+  .bar .progress-line span{
+    height:100%;
+    width:80%;
+    background:#A12568;
+    position:absolute;
+    border-radius:10px 10px 10px 10px;
+    transform: scaleX(0);
+    animation:animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform-origin:left;
+  }
+  .bar .progress-line.html span{
+      background-color: #FFB319;
+  }
+  .bar .progress-line.css span{
+    background-color: #3DB2FF;
+}
+.bar .progress-line.jquery span{
+    background-color: #E63E6D;
+}
+.bar .progress-line.python span{
+    background-color: #80ED99;
+}
+.bar .progress-line.mysql span{
+    background-color: #FF5C58;
+}
+.bar .progress-line.c span{
+    background-color: #22577A;
+}
+
+.bar .progress-line.photoshop span{
+    background-color: #FFB319;
+}
+.bar .progress-line.canva span{
+    background-color: #3DB2FF;
+}
+.bar .progress-line.picsart span{
+    background-color: #E63E6D;
+}
+.bar .progress-line.premiere span{
+    background-color: #80ED99;
+}
+
+  .bar .progress-line span::before{
+    position:absolute;
+    content:"";
+    right:0;
+    top:-10px;
+    height:0;
+    width:0;
+    border:7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width:0px;
+    border-top-color:#000;
+    opacity:0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2{
+    100%{
+      opacity:1;
+    }
+  }
+  .bar .progress-line span::after{
+    position:absolute;
+    right:0;
+    top:-24px;
+    color:black;
+    font-size:12px;
+    font-weight:500;
+    background:white;
+    padding:1px 8px;
+    border-radius:3px;
+  }
+  
+  .progress-line.html span{
+    width:80%;
+  }
+  .progress-line.css span{
+    width:60%;
+  }
+  .progress-line.jquery span{
+    width:55%;
+  }
+  .progress-line.python span{
+    width:75%;
+  }
+  .progress-line.mysql span{
+    width:90%;
+  }
+  .progress-line.c span{
+    width:25%;
+  }
+
+  .progress-line.photoshop span{
+    width:65%;
+  }
+
+  .progress-line.canva span{
+    width:85%;
+  }
+
+  .progress-line.picsart span{
+    width:90%;
+  }
+  .progress-line.premiere span{
+    width:20%;
+  }
+
+  
+
+  
+  .progress-line.html span::after{
+    content:"80%";
+  }
+  .progress-line.css span::after{
+    content:"60%";
+  }
+  .progress-line.jquery span::after{
+    content:"55%";
+  }
+  .progress-line.python span::after{
+    content:"75%";
+  }
+  .progress-line.mysql span::after{
+    content:"90%";
+  }
+  .progress-line.c span::after{
+    content:"25%";
+  }
+
+  .progress-line.photoshop span::after{
+    content:"65%";
+  }
+  .progress-line.canva span::after{
+    content:"85%";
+  }
+  .progress-line.picsart span::after{
+    content:"90%";
+  }
+  .progress-line.premiere span::after{
+    content:"20%";
+  }
+/* --------------------------------------------------------------------------------------------------------------------------------   */
+
+@media screen and (max-width: 768px) {
+.skills-bar{
+  width:300px;
+  float:right;
+  margin-right:20px;
+}
+
+.carousel-control-prev,.carousel-control-next{
+  visibility: hidden;
+}
+
+.glow-on-hover{
+  width:150px;
+  height:40px;
+}
+}
+

@@ -1,0 +1,8 @@
+.dice{
+    font-size:11px;
+    margin-left:5px;
+    margin-top:-40px;
+}
+.dice,.drum,.simon{
+    width:95%;
+}
