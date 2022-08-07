@@ -27,6 +27,7 @@
 </head>
 <body>
   <section id="title">
+    <!-- START OF NAVIGATION BAR -->
     <nav>
       <input id="nav-toggle" type="checkbox">
       <a href="index.html"><div class="logo"><img class="avengers-logo" src="images/avengers logo.png">sad</div></a>
@@ -36,7 +37,6 @@
         <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
         <li><a class="contact" href="#contact">Contact</a></li>
         <li><a class="timeline" href="#timeline">Timeline</a></li>
-
       </ul>
       <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -44,6 +44,8 @@
         <div class="line"></div>
       </label>
     </nav>
+    <!-- END OF NAVIGATION BAR -->
+
     <section id="title">
     <div class="conatiner">
     <div class="row">
@@ -52,7 +54,7 @@
         <h1 class="Hey">Hey <span class="emoji">👋</span></h1>
         <h1 class="Name">I AM ASAD</h1>
         <h1 class="type">a <span class="work typed" id="typed"></span></h1>
-        <button class="glow-on-hover" type="button">Hire Me</button>
+        <a href="/contact.html"><button class="glow-on-hover" type="button">Hire Me</button></a>
         </div>
       </div>
       <div class="col-lg-6">
@@ -76,15 +78,6 @@
     });
   </script>
 
-  <!-- <div class="icons">
-    <i class="icon fab fa-github fa-2x"></i>
-    <i class="icon fab fa-discord fa-2x" ></i>
-    <i class="icon fab fa-twitter fa-2x"></i>
-    <i class="icon fab fa-instagram fa-2x"></i>
-    <i class="icon fab fa-youtube fa-2x"></i>
-
-  </div> -->
-
 </section>
 
 <!-- Features -->
@@ -101,22 +94,21 @@
   </div>
 
   <section id="about-asad">
-    <div class="conatiner">
+    <div class="container">
       <hr>
       <h1 class="about-title">Let Me Introduce Myself</h1>
       <div class="about-me-paratitle">
-      <h3 id="about-scroll" class="about-hey reveal">Hey there,</h3>
-      <p class="about-para reveal">I am Asad Parkar from India! I love coding, taking photos and learning new things. I am a front end web developer and python programmer. Feel free to get in touch or have a look at my work below.
-      </p>
-      <a href="about.html" class="button glow-button">Know More</a>
+        <h3 id="about-scroll" class="about-hey reveal">Hey there,</h3>
+        <p class="about-para reveal">I am Asad Parkar from India! I love coding, taking photos and learning new things. I am a front end web developer and python programmer. Feel free to get in touch or have a look at my work below.</p>
+        <a href="about.html" class="button glow-button">Know More</a>
     </div>
   </section>
 
   <section id="projects">
     <hr>
     <h1 class="project-title">Projects I am working on 👨‍💻</h1>
-    <div class="row">
-      <div class="col-lg-6 reveal">
+
+      <div class="reveal project-container">
         <div class="card project-productovo" style="width: 20rem;">
           <img src="images/productovo.png" class="card-img-top" alt="productovo">
           <div class="card-body">
@@ -125,173 +117,127 @@
             <a href="https://top.gg/bot/819838809318621184" class="btn btn-dark">VISIT WEBSITE</a>
           </div>
         </div>
-     </div>
-      <div class="col-lg-6 reveal">
-        <div class="card project-funnel" style="width: 20rem;">
-          <img src="images/funnel.png" class="card-img-top" alt="funnel">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Funnel</strong></h5>
-            <p class="card-text">Funnel is an accouting software as well as an android app which helps users in their day to day accounting tasks and has been developed by my friends. I am the web developer for funnel and I manage their website.</p>
-            <a href="https://funnelnetwork.in/" class="btn btn-dark">VISIT WEBSITE</a>
-          </div>
-        </div>
       </div>
-    </div>
   </section>
 
   <section id="portfolio">
     <hr>
     <h1 class="portfolio-title">Portfolio📁</h1>
-
+    <div class="port-row-container">
     <div class="row portfolio-1 reveal">
 
       <div class="col-lg-4">
-
-        <a href="https://asadparkar.github.io/tin-dog/">
+        <a href="https://enigmatic-springs-21556.herokuapp.com/" target=”_blank”>
           <div class="img-overlay">
-       <img src="images/tindog.jpg" alt="tindog" class="img-overlay-image">
+       <img src="images/weather.jpg" alt="tindog" class="img-overlay-image">
        <div class="overlay">
          <div class="text">Click for Preview</div>
        </div>
      </div>
      </a>
-     <h5 class="tindog">Tindog Website</h5>
+     <h5 class="tindog">Live Weather Forecast</h5>
       </div>
 
       <div class="col-lg-4">
-        <a href="https://asadparkar.github.io/starbucks/">
+        <a href="http://asadparkar.me/Food-website/" target=”_blank”>
           <div class="img-overlay">
-        <img src="images/starbucks.jpg" alt="starbucks-website" class="img-overlay-image">
+        <img src="images/foods.jpg" alt="starbucks-website" class="img-overlay-image">
        <div class="overlay">
          <div class="text">Click for Preview</div>
        </div>
        </div>
      </a>
-     <h5 class="starbucks">Custom Starbucks Website</h5>
+     <h5 class="starbucks">Resturant Website</h5>
      </div>
 
 
      <div class="col-lg-4">
-        <a href="https://asadparkar.github.io/forest-portfolio/">
+        <a href="http://asadparkar.me/buisness-agency/" target=”_blank”>
           <div class="img-overlay">
-        <img src="images/forest.jpg" alt="forest-theme-portfolio" class="img-overlay-image">
+        <img src="images/buisness.jpg" alt="forest-theme-portfolio" class="img-overlay-image">
        <div class="overlay">
          <div class="text">Click for Preview</div>
        </div>
      </div>
      </a>
-     <h5 class="forest">Forest portfolio website</h5>
+     <h5 class="forest">Buisness Agency Website</h5>
     </div>
   </div>
-  <a href="portfolio.html"><button type="button" class="more btn btn-outline-light">View More...</button></a>
+  </div>
 
+  <div class="more-container">
+    <a href="portfolio.html"><button type="button" class="more btn btn-outline-light">View More...</button></a>
+  </div>
   </section>
-
-  <section id="skill">
+  <section id="technologies">
     <hr>
-    <h1 class="skill-title">Technical Skills💼</h1>
-
-    
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner reveal">
-        <div class="carousel-item active">
-          <h3 class="skill-title">Languages</h3>
-          <div class="skills-bar">
-            <div class="bar">
-              <div class="info">
-              <span>HTML</span>
-              </div>
-              <div class="progress-line html"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>CSS</span>
-              </div>
-              <div class="progress-line css"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>JQuery</span>
-              </div>
-              <div class="progress-line jquery"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>Python</span>
-              </div>
-              <div class="progress-line python"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>Bootstrap</span>
-              </div>
-              <div class="progress-line mysql"><span></span></div>
-            </div>    
-            
-            <div class="bar">
-              <div class="info">
-              <span>C++</span>
-              </div>
-              <div class="progress-line c"><span></span></div>
-            </div>
-
-          </div>
+    <h1 class="tech-heading">Technologies</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" alt="">
         </div>
-        <div class="carousel-item">
-          <h3 class="skill-title">Design</h3>
-          <div class="skills-bar">
-            <div class="bar">
-              <div class="info">
-              <span>Adobe Photoshop</span>
-              </div>
-              <div class="progress-line photoshop"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>Canva</span>
-              </div>
-              <div class="progress-line canva"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>Picsart</span>
-              </div>
-              <div class="progress-line picsart"><span></span></div>
-            </div>
-          
-            <div class="bar">
-              <div class="info">
-              <span>Adobe Premiere Pro</span>
-              </div>
-              <div class="progress-line premiere"><span></span></div>
-            </div>
-                    
-          </div>
+        <div class="col-lg-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="https://www.ocaalliance.com/wp-content/uploads/2022/02/2565C17B53D77D2AEE0D7814BA663CFDDCED235B3129DCDF9976620452056BB2.png" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="images/bootsrap.png" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img src="https://1.bp.blogspot.com/-bqIlLy4An50/YN97YTB3urI/AAAAAAAAKaE/9B333slCRdADrVpgq7tCp84S7TcJGZPZwCLcBGAsYHQ/s624/AzureSQLDBUser00.png" alt="">
         </div>
 
+        <div class="row">
+          <div class="col-lg-2">
+            <img src="images/mongo.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="">
+          </div>
+        </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </section>
-
   <hr class="timeline-line">
   <h1 class="timeline-title">Timeline</h1>
   <section id="timeline" class="timeline-section">
     <div class="timeline-items">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">June 2022</div>
+        <div class="timeline-content">
+          <h3>Finished Learning Back-End</h3>
+          <p>So finally I have completed learning back-end web development and now i can proudly call myself a Full Stack Web Developer</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">March 2022</div>
+        <div class="timeline-content">
+          <h3>Created 30+ Projects on the Front-End</h3>
+          <p>After becoming a Full-Stack Developer, I decided not to quickly move on to the back end. So i started making many front-end websites and all of them can be found on my linked in and website.</p>
+        </div>
+      </div>
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-date">September 2021</div>
@@ -306,14 +252,6 @@
         <div class="timeline-content">
           <h3>Started to learn Web-Development</h3>
           <p>I always had an intrest to build my own websites and so I started to learn web development from a course by Angela Yu on udemy to become a full stack Web Developer.</p>
-        </div>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">July 2021</div>
-        <div class="timeline-content">
-          <h3>Started learning C++</h3>
-          <p>I started learning the language C++ and this is going to be the second major computer language which I am going to Learn after Python. I am excited for what comes next.</p>
         </div>
       </div>
       <div class="timeline-item reveal">
@@ -366,7 +304,7 @@
       <a href="https://www.instagram.com/_asad.parkar_/" target="_blank"><i class="bottom-icon icon fab fa-instagram fa-2x"></i></a>
     
       <h4 class="rights">Website created with ❤️ by Asad Parkar</h4>
-      <h5 class="rights">©2021 All rights reserved</h5>
+      <h5 class="rights">©2022 All rights reserved</h5>
     </div>
   </section>
 

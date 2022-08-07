@@ -1,8 +1,41 @@
-.dice{
-    font-size:11px;
-    margin-left:5px;
-    margin-top:-40px;
+.port-card{
+    width: 30%;
 }
-.dice,.drum,.simon{
-    width:95%;
+#portfolio h1{
+    margin-bottom: 2rem;
+}
+.container-port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+h5{
+    width: 75%;;
+}
+
+.footer{
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .container-port{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .port-card{
+        width: 100%;
+        padding-left: 4rem;
+    }
+    h5{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
 }

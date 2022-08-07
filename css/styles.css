@@ -2,9 +2,6 @@ body{
     background-color: #11052c;
 }
 
-#title{
-
-}
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -68,7 +65,6 @@ html{
         transform:rotate(0deg);
     }
 }
-
 
 .Hey{
     margin-left:-340Px;
@@ -144,13 +140,12 @@ hr{
     font-family: 'Rubik', sans-serif;
     text-align: center;
  }
- #about-asad hr{
- }
+
 .about-para{
-    font-size: 30px;
+    font-size: 1.4rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-
+    text-align: left;
  }
 
 .about-hey{
@@ -160,8 +155,6 @@ hr{
 
 .about-me-paratitle{
     margin-top:40px;
-    font-size:20px;
-    margin-left:105px;
 }
 
 #projects{
@@ -177,16 +170,16 @@ hr{
     text-align: center;
     font-size:40px;
 }
-.project-productovo{
-    margin-left:350px;
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.project-funnel{
-    margin-left:100px;
-}
+
 
 .card {
     background-color:white;
-
 }
 
 
@@ -202,27 +195,33 @@ hr{
     color:white;
     text-align: center;
 }
-
 #portfolio .card{
     background-color: #3B185F;
-
 }
-
-
-
+#portfolio h5{
+    margin-top:1rem;
+}
+.portfolio-1 .col-lg-4{
+    padding-left: 5rem;
+}
+.portfolio-1 h5{
+    padding:0;
+    width: 75%;
+    text-align: center;
+}
 .img-overlay {
     position: relative;
     width:75%;
   }
   
-  .img-overlay-image {
+.img-overlay-image {
     display: block;
     width: 100%;
     height: auto;
-  }
+}
 
   
-  .overlay{
+.overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -233,12 +232,12 @@ hr{
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,.5);
-  }
+}
 
   
-  .img-overlay:hover .overlay {
+.img-overlay:hover .overlay {
     opacity: 1;
-  }
+}
   
   .text {
     color: white;
@@ -251,58 +250,22 @@ hr{
     text-align: center;
   }
 
-#skill{
+.more-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+}
+
+.tech-heading{
     color:white;
-    font-family: 'Rubik', sans-serif;
-}
-.carousel-inner{
-    margin-top:55px;
-}
-.skill-title{
     text-align: center;
 }
-
-/* -------------------------------------------(TINDOG)----------------------------------------------------------------- */
-.tindog{
-    margin-right:160px;
-}
-.tindog-photo{
-    margin-left:30px;
-}
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-
-/* --------------------------------------------------(STARBUCKS & FOREST)-------------------------------------------------------------- */
-.starbucks{
-    margin-right:120px;
-}
-.forest{
-    margin-right:125px;
-}
-/* ----------------------------------------------------------------------------------------------------------------------------- */
-
-.dice{
-    margin-left:15px;
-}
-.simon{
-    margin-right:15px;
+#technologies img{
+    width: 70%;
 }
 
-.portfolio-1{
-    margin-left:80px;
-}
-
-.carousel-control-prev{
-    margin-left:200px;
-}
-
-.carousel-control-next{
-    margin-right:230px;
-}
-
-.more{
-    margin-top:30px;
-    margin-left:690px;
-}
 .timeline-title{
     text-align: center;
     color:white;
@@ -390,14 +353,14 @@ hr{
     html{
     }
     .Name{
-        font-size: 50px;
+        font-size: 2rem;
     }
     .Hey{
         margin-top: 15px;
         margin-left:25px;
     }
     .type .work{
-        font-size: 35px;
+        font-size: 30px;
     }
     .asad-photo{
         margin-top:5px;
@@ -410,45 +373,36 @@ hr{
         margin-top:-10px;
     }
     .about-title{
-        font-size:30px;
+        font-size:1.5rem;
     }
     .about-para{
         font-size:15px;
-        margin-left:-90px;
     }
     .about-hey{
-        margin-top:130px;
-        margin-left:-90px;
+        font-size: 1.4rem;
     }
     .card-img-top{
         margin-left: 80px;
-        width:50%
+        width:40%
     }
     .project-productovo{
-        margin-left: 25px;
     }
     .project-funnel{
         margin-top: 15px;;
         margin-left:25px;
     }
 
-    .portfolio-1{
-        margin-left:60px;
+    #portfolio h5{
+        font-size: 0.8rem;
+        text-align: center;
     }
-    .starbucks,.forest{
-        font-size: 11px;
-        margin-left:50px;
-    }
-    .tindog{
-        font-size: 11px;
-        margin-left: 80px;
+    #technologies img{
+        width: 20%;
+        margin-bottom:2rem;
     }
     .contact-title{
         margin-top:105px;
         font-size:50px;
-    }
-    .more{
-        margin-left:120px;
     }
 
 }
