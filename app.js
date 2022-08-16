@@ -5,7 +5,10 @@ const social = document.querySelectorAll('.social i');
 const homebutton = document.querySelector('.intro button')
 const  navbar = document.querySelector('.navbar')
 const about = document.querySelector('.about-section-class');
-
+const portfolio_toggle = document.getElementById('portfolio');
+const skills = document.getElementById('skill-section');
+const skillh = document.querySelector('#skill-section h1');
+const skillp = document.querySelectorAll('#skill-section h3');
 
 
 const hone = document.querySelector('h1')
@@ -27,7 +30,12 @@ toggle.addEventListener('click',function(){
       navbar.style.opacity = 0.8;
       about.style.background = "rgba(0, 0, 0, 0.1)";
       about.style.color = "black";
-
+      portfolio_toggle.classList.add('alt-portfolio');
+      skills.style.background = "rgba(0, 0, 0, 0.1)";
+      skillh.classList.add('light');
+      for (var i = 0; i < skillp.length; ++i){
+        skillp[i].classList.add('light');
+      }
 
       window.pJSDom[0].pJS.particles.number.value = 90;
       window.pJSDom[0].pJS.particles.color.value = '#000000';
@@ -51,6 +59,13 @@ toggle.addEventListener('click',function(){
       navbar.style.opacity = 0.7;
       about.style.background = "black";
       about.style.color = "white";
+      portfolio_toggle.classList.remove('alt-portfolio');
+      skills.style.background = "black";
+      skillh.classList.remove('light');
+      for (var i = 0; i < skillp.length; ++i){
+        skillp[i].classList.remove('light');
+      }
+
 
       window.pJSDom[0].pJS.particles.number.value = 80;
       window.pJSDom[0].pJS.particles.color.value = '#ffffff';

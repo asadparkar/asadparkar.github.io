@@ -6,6 +6,7 @@ body{
     cursor: url('CGC.cur'),pointer;
     background-color: white;
 }
+
 a{
     color:inherit;
 }
@@ -14,7 +15,6 @@ a{
     background:black;
 }
 #home{
-    height: 100vh;
 }
 /* START OF NAVBAR */
 .navbar{
@@ -63,6 +63,7 @@ a{
         bottom:0;
         width: 100vw;
         height: 4rem;
+        overflow: hidden;
     }
     .navbar-nav{
         flex-direction: row;
@@ -140,9 +141,7 @@ a{
     from{text-shadow:0px 0px 5px #fff,0px 0px 2px #614ad3;}
     to{text-shadow:0px 0px 20px #fff,0px 0px 10px #614ad3;}
 }
-.light{
-    color:black !important;
-}
+
 .social{
     color:white;
 }
@@ -170,6 +169,9 @@ a{
     .intro img{
         width: 70%;
     }
+    body, html {
+        overflow-x: hidden;
+        }
 }
 .social i:hover{
     transform: rotate(360deg);
@@ -259,15 +261,21 @@ a{
 /* START OF PORTFOLIO */
 
 #portfolio{
-    background: url(../images/space.jpg);
-    height: 55rem;
+    /* height: 70rem; */
     background-size: cover;
     background-repeat: no-repeat;
+}
+.portfolio{
+    background: url(../images/space.jpg);
+}
+.alt-portfolio{
+    background: url(../images/Scene-18.jpg);
 }
 .work-container{
     padding: 8rem;
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
+    color:white;
 }
 .work-container h1{
     margin:0;
@@ -283,13 +291,285 @@ a{
     border-radius: 100%;
     width: 40%;
     opacity: 0.4;
+    margin-bottom:8rem
+
+}
+.row{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+.row h1{
+    font-family: 'Trispace', sans-serif;
+    text-align: left;
+}
+.row p{
+    font-size: 1.2rem;
+}
+.card{
+    margin-bottom: 8rem;
+    
+}
+.source {
+    font-size: 2rem;
+    margin-top:0.6rem;
+    display:none;
 }
 
+.card img{
+    width: 100%;
+}
+.col{
+    width: 60%;
+    margin-left: 6rem;
+}
+
+/* FOR PHONES */
 @media only screen and (max-width:600px){
     .work-container{
-        padding: 0rem;
+        padding: 1rem;
     }
     .work-container h1{
+        font-size: 1.8rem;
+    }
+    .row p{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .row-2{
+        flex-direction: column-reverse;
+    }
+    .work-container hr{
+        margin-bottom: 4rem;
+    }
+    .col{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    .col h1{
+        font-size: 1.5rem;
+    }
+    .card{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card img{
+        width: 100%;
+    }
+
+
+}
+
+/* FOR SMALL LAPTOPS */
+@media screen and (min-width: 650px) and (max-width: 1200px) { 
+    .col p{
+        font-size: 1rem;
+    }
+    .col h1{
+        font-size:1.5rem
+    }
+    .work-container{
+        padding: 5rem;
+    }
+        
+}
+
+/* FOR NORMAL LAPTOPS */
+@media only screen and (min-width:600px){
+    .card:hover{
+        height: 17rem;;
+        border:solid;
+        border-color:white;
+        border-width: 1px;
+        background-color:rgba(0, 0, 0, 0.7);
+        box-shadow: 1rem -0.3rem 4rem #fff;
+
+    }
+    .source a:hover{
+        color:#FFC23C;
+    }
+    .card:hover .source{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card{
+        height: 17rem;
+        width: 25rem;
+
+    }
+}
+/* END OF PROJECTS SECTION */
+#skill-section{
+    background-color: black;
+    padding: 8rem;
+
+}
+.skill{
+    color:white;
+    list-style: none;
+}
+#skill-section h1{
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+    font-family: 'Silkscreen', cursive;
+}
+#skill-section hr{
+    background-color: #FFC23C;
+    border: solid;
+    border-color: #FFC23C;
+    border-radius: 100%;
+    width: 40%;
+    opacity: 0.4;
+    margin-bottom:8rem
+
+}
+.skill-container h3{
+    margin:5px;
+}
+.skill{
+    width: 1800px;
+    padding:20px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.skill li{
+    margin:20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25),0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.12),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+.javascript{
+    width: 70%;
+    animation: javascript 3s;
+}
+.node_js{
+    width: 72%;
+    animation:  node_js 3s;
+}
+.express{
+    width: 60%;
+    animation:  express 3s;
+}
+.mongo{
+    width: 50%;
+    animation:  mongo 3s;
+}
+.skill-container{
+    display: flex;
+    align-items: center;
+}
+.skill-img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+#skill-section img{
+    width: 70%;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes node_js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+@keyframes express{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes mongo{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:600px){
+    #skill-section{
+        padding: 0rem;
+        margin-top:-2.5rem;
+    }
+    #skill-section h1{
         font-size: 2rem;
     }
+    .skill-container{
+        flex-direction: column;
+    }
+    .skill{
+        width: 100%;
+        padding:10px;
+        box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    #skill-section hr{
+        margin-bottom: 1rem;
+    }
+    .skill-container img{
+        display: none;
+    }
+}
+
+.light{
+    color:black !important;
 }
