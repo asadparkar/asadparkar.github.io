@@ -573,3 +573,83 @@ a{
 .light{
     color:black !important;
 }
+/* END OF SKILLS SECTION */
+#certificates-section{
+    background: url(../images/ocen-bg.jpg);
+    background-size: cover;
+}
+#certificates-section hr{
+    background-color: #FFC23C;
+    border: solid;
+    border-color: #FFC23C;
+    border-radius: 100%;
+    width: 40%;
+    opacity: 0.4;
+    margin-bottom:8rem
+
+}
+.certificate-container{
+    background: rgba(0, 0, 0,0.5);
+    height: 100%;
+    padding: 8rem;
+    color:white;
+
+}
+.certificate-container h1{
+    font-size: 3rem;
+    color:white;
+    font-family: 'Silkscreen', cursive;
+    text-align: center ;
+}
+.certificate-row{
+    display: flex;
+    justify-content: space-evenly
+}
+.certificate-card{
+    padding: 1rem;
+    width: 20rem;
+    background: rgba(0, 0, 0, 0.7);
+    height: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s,box-shadow 0.7s;
+}
+.certificate-card p{
+    text-align: left;
+    margin-top:2rem
+}
+.certificate-card a{
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+.certificate-card i:hover{
+    transition: all 0.5s ease;
+    color: #FFC23C;
+}
+.certificate-card img{
+    width: 70%;
+    display: flex;
+}
+.certificate-card:hover{
+    transform: scale(1.1);
+    box-shadow: 1rem 1rem #000;
+}
+@media only screen and (max-width:600px){
+    .certificate-container{
+        padding:0rem;
+    }
+    .certificate-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificate-container h1{
+        font-size: 2rem;
+    }
+    .certificate-card{
+        width: 15rem;
+        margin-bottom: 1.5rem;
+
+    }
+}
