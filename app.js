@@ -9,8 +9,9 @@ const portfolio_toggle = document.getElementById('portfolio');
 const skills = document.getElementById('skill-section');
 const skillh = document.querySelector('#skill-section h1');
 const skillp = document.querySelectorAll('#skill-section h3');
-
-
+const certification_toggle = document.getElementById('certificates-section');
+const services = document.querySelector('#services');
+const serviceh = document.querySelector('#services h1');
 const hone = document.querySelector('h1')
 const hthree = document.querySelector('h3')
 
@@ -36,6 +37,10 @@ toggle.addEventListener('click',function(){
       for (var i = 0; i < skillp.length; ++i){
         skillp[i].classList.add('light');
       }
+      certification_toggle.classList.add('alt-certificates');
+      services.classList.add('light');
+      services.style.background = "rgba(0, 0, 0, 0.1)";
+      serviceh.style.color = "black";
 
       window.pJSDom[0].pJS.particles.number.value = 90;
       window.pJSDom[0].pJS.particles.color.value = '#000000';
@@ -65,7 +70,10 @@ toggle.addEventListener('click',function(){
       for (var i = 0; i < skillp.length; ++i){
         skillp[i].classList.remove('light');
       }
-
+      certification_toggle.classList.remove('alt-certificates');
+      services.classList.remove('light');
+      services.style.background = "black";
+      serviceh.style.color = "white";
 
       window.pJSDom[0].pJS.particles.number.value = 80;
       window.pJSDom[0].pJS.particles.color.value = '#ffffff';
