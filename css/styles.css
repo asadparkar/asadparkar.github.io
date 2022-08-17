@@ -713,7 +713,12 @@ a{
     text-align: center;
     animation: move 3s infinite;
     box-shadow: 0.5rem 0.5rem #3B9AE1;
+    transition: box-shadow 0.5s;
 }
+.service-card:hover{
+    box-shadow: 1rem 1rem #3B9AE1;
+}
+
 .service-details{
     display: flex;
     align-items: center;
@@ -811,7 +816,7 @@ a{
         margin-top:0rem;
     }
     50%{
-        margin-top:2rem;
+        margin-top:3rem;
     }
     100%{
         margin-top:0rem;

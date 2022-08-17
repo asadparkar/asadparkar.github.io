@@ -14,6 +14,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
 
 </head>
@@ -79,15 +82,15 @@
   </section>
 
   <section id="about-section" class="about-section-class">
-    <div class="about-container">
-      <div>
+    <div class="about-container" >
+      <div data-aos="fade-right">
         <h1>About me</h1><hr>
         <p>I am a Self Learned Full Stack Web Developer who is currently persuing B.tech in Computer Engineering. I am a curious learner with quick learning abilites 
           and good problem solving skills. I have worked on and built several projects, which has strengthened my skills in Front and Back End Web Development. Always Looking forward to creating different stuff and learning
           new technologies to upgrade my skills.
         </p>  
       </div>
-      <div>
+      <div data-aos="fade-left">
         <img src="images/dev.png" alt="">
       </div>
     </div>
@@ -97,14 +100,14 @@
     <div class="work-container">
       <h1>My Work</h1><hr>
       <div class="row">
-        <div class="card">
+        <div class="card" data-aos = "flip-right">
           <img src="images/productovo.png" alt="">
           <div class="source">
             <a href=""><i class="fa-solid fa-eye"></i></a>
             <a href="/lol"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-aos = "flip-left">
           <h1>Productovo</h1>
           <p>Productovo is a Discord Bot Application which helps thousands of users wordlwide to manage their tasks and complete them efficently.
             Packed with features like a To-Do List, Study Timers and Study Rewards, Productovo comes out to be a good study partner.
@@ -112,14 +115,14 @@
         </div>
       </div>
 
-      <div class="row row-2">
+      <div class="row row-2" data-aos = "flip-right">
         <div class="col">
           <h1>Weather Forecast</h1>
           <p>
             This is a website whose back-end is coded with node.Js. This website allows you to fetch live weather data from any location you type in and convert the fetched JSON into a beautiful Website.
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-aos = "flip-left">
           <img src="images/weatherforecast.jpg" alt="">
           <div class="source">
             <a href=""><i class="fa-solid fa-eye"></i></a>
@@ -129,14 +132,14 @@
       </div>
 
       <div class="row">
-        <div class="card">
+        <div class="card" data-aos="fade-left" >
           <img src="images/old-portfolio.jpg" alt="">
           <div class="source">
             <a href=""><i class="fa-solid fa-eye"></i></a>
             <a href="/lol"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right">
           <h1>Old Portfolio</h1>
           <p>
             This is my Old Static Portfolio Website which was coded with Html,CSS and a lot of Javascript. It is also one of the most visually appealing sites
@@ -257,6 +260,11 @@
   <script type="text/javascript" src="particles.js"></script>
   <script type="text/javascript" src="app.js"></script>
   <script src="index.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
