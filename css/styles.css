@@ -360,21 +360,7 @@ a:link{
     position: relative;
     z-index: 5;
 }
-.btn-more:before{
-    content: '';
-    position: absolute;
-    background: #FFC23C;
-    width: 3rem;
-    height: 3rem;
-    top:0;
-    left:0;
-    border-radius: 1rem;
-    z-index: -1;
-    transition:all 0.9s ease-in;
-}
-.btn-more:hover::before{
-    width: 100%;
-}
+
 /* FOR PHONES */
 @media only screen and (max-width:600px){
     .work-container{
@@ -411,6 +397,9 @@ a:link{
     }
     .card img{
         width: 100%;
+    }
+    .more-btn button{
+        margin-bottom: 3rem;
     }
 
 
@@ -455,6 +444,22 @@ a:link{
         width: 25rem;
 
     }
+
+    .btn-more:before{
+        content: '';
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        width: 3rem;
+        height: 3rem;
+        top:0;
+        left:0;
+        border-radius: 1rem;
+        z-index: -1;
+        transition:all 0.9s ease-in;
+    }
+    .btn-more:hover::before{
+        width: 100%;
+    }
 }
 /* END OF PROJECTS SECTION */
 #skill-section{
@@ -486,7 +491,7 @@ a:link{
     margin:5px;
 }
 .skill{
-    width: 1800px;
+    width: 1600px;
     padding:20px;
     box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -535,14 +540,14 @@ a:link{
     width: 50%;
     animation:  mongo 3s;
 }
-.skill-container{
-    display: flex;
-    align-items: center;
-}
+
 .skill-img{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: flex-end
+}
+.skill-container{
+    display: flex;
 }
 
 #skill-section img{
@@ -978,4 +983,10 @@ a:link{
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+@media only screen and (max-width:600px){
+    #preloader{
+        background-size:60%;
+    }
 }

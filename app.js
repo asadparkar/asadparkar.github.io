@@ -14,6 +14,7 @@ const services = document.querySelector('#services');
 const serviceh = document.querySelector('#services h1');
 const hone = document.querySelector('h1')
 const hthree = document.querySelector('h3')
+const website = document.querySelector('.website');
 
 toggle.addEventListener('click',function(){
   if (this.classList.contains('fa-sun')){
@@ -41,6 +42,8 @@ toggle.addEventListener('click',function(){
       services.classList.add('light');
       services.style.background = "rgba(0, 0, 0, 0.1)";
       serviceh.style.color = "black";
+      website.style.color = 'black';
+      website.style.borderColor = 'black'
 
       window.pJSDom[0].pJS.particles.number.value = 90;
       window.pJSDom[0].pJS.particles.color.value = '#000000';
