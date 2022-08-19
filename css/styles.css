@@ -149,6 +149,7 @@ a{
 
 .social{
     color:white;
+    display: flex;
 }
 .social i{
     font-size: 2.1rem;
@@ -269,6 +270,7 @@ a{
     /* height: 70rem; */
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -5;
 }
 .portfolio{
     background: url(../images/space.jpg);
@@ -281,6 +283,7 @@ a{
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     color:white;
+
 }
 .work-container h1{
     margin:0;
@@ -328,7 +331,50 @@ a{
     width: 60%;
     margin-left: 6rem;
 }
+.more-btn{
+    border:none;
+    outline:none;
+    display: flex;
+    justify-content: center;
+}
+a:link{
+    text-decoration: none!important;
+}
 
+.more-btn button{
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    font-family: 'Silkscreen', cursive;
+    font-family: 'Trispace', sans-serif;
+    border-radius: 1rem;
+    cursor: pointer;
+    background:transparent;
+    color:white;
+    border:1px solid #fff;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+.btn-text{
+    position: relative;
+    z-index: 5;
+}
+.btn-more:before{
+    content: '';
+    position: absolute;
+    background: #FFC23C;
+    width: 3rem;
+    height: 3rem;
+    top:0;
+    left:0;
+    border-radius: 1rem;
+    z-index: -1;
+    transition:all 0.9s ease-in;
+}
+.btn-more:hover::before{
+    width: 100%;
+}
 /* FOR PHONES */
 @media only screen and (max-width:600px){
     .work-container{
@@ -854,6 +900,7 @@ a{
     color:#FFC23C;
     transition: all 0.5s ease;
 }
+
 .personal{
     display: flex;
     justify-content: center;
@@ -920,4 +967,15 @@ a{
         padding-bottom: 4rem;
         font-size: 0.8rem;
     }
+}
+/* END OF CONTACT SECTION */
+
+/* PRELOADER */
+#preloader{
+    background:#000 url(../images/Twirl-1.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
